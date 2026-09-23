@@ -116,7 +116,7 @@ export default {
 
   sitemap: {
     path: '/sitemap.xml',
-    hostname: process.env.VUE_APP_FRONTEND,
+    hostname: process.env.VUE_APP_FRONTEND || 'https://sigstore.dev',
     generate: true,
     cacheTime: 86400,
     trailingSlash: true
